@@ -26,4 +26,17 @@ public class MainClassTest {
             assertEquals("It is wrong value!", number, putNumber);
         }
     }
+
+    @Test
+    public void testGetClassString() {
+        String string = Main.getClass_string();
+        String substring = "hello";
+        int index_substring = string.toLowerCase().indexOf(substring);
+
+        if (index_substring != -1) {
+            System.out.println("It is ok string: " + string);
+        } else {
+            assertEquals("The string is missing keyword: " + substring, substring, string);
+        }
+    }
 }
