@@ -7,7 +7,7 @@ public class MainClassTest {
 
     @Test
     public void testGetLocalNumber() {
-        int number = 17;
+        int number = 14;
         int putNumber = Main.getLocalNumber();
         if (number == putNumber) {
             System.out.println("It is ok number: " + putNumber);
