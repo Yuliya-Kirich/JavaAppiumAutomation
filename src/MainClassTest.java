@@ -15,4 +15,15 @@ public class MainClassTest {
             assertEquals("It is wrong value!", number, putNumber);
         }
     }
+
+    @Test
+    public void testGetClassNumber() {
+        int number = 45;
+        int putNumber = Main.getClassNumber();
+        if (putNumber > number) {
+            System.out.println("It is ok value: " + putNumber);
+        } else {
+            assertEquals("It is wrong value!", number, putNumber);
+        }
+    }
 }
